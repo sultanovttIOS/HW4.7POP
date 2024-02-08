@@ -17,6 +17,8 @@ extension TransferProtocol {
     
     func validateCardNumber(tf: UITextField) -> Bool {
         if tf.text?.count == 16 && tf.text?.allSatisfy({ $0.isNumber }) == true {
+            tf.layer.borderColor = .none
+            tf.layer.borderWidth = 0
             return true
         } else {
             tf.layer.borderWidth = 2
@@ -28,6 +30,8 @@ extension TransferProtocol {
     
     func validateSumTransfer(tf: UITextField, balance: Double, transferSum: Double) -> Bool {
         if transferSum >= 20 && transferSum <= balance {
+            tf.layer.borderColor = .none
+            tf.layer.borderWidth = 0
             return true
         } else {
             tf.attributedPlaceholder = NSAttributedString(string: "Сумма должна быть от 20 - \(balance).",
