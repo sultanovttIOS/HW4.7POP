@@ -7,7 +7,7 @@
 
 import UIKit
 import SnapKit
-
+import IQKeyboardManagerSwift
 class ViewController: UIViewController {
 
     private lazy var titleLabel = MakerView.shared.makerLabel(text: "Выберите способ оплаты", font: UIFont.systemFont(ofSize: 24, weight: .bold), textColor: .black, numberOfLines: 1)

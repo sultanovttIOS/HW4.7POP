@@ -19,6 +19,7 @@
 		CE9562EA2B71091700A5FD25 /* KoronaViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE9562E92B71091700A5FD25 /* KoronaViewController.swift */; };
 		CE9562EE2B7276F400A5FD25 /* Validate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE9562ED2B7276F400A5FD25 /* Validate.swift */; };
 		CE9562F02B727CBB00A5FD25 /* LastViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE9562EF2B727CBB00A5FD25 /* LastViewController.swift */; };
+		CEC93FCD2B794CB300B97D90 /* IQKeyboardManagerSwift in Frameworks */ = {isa = PBXBuildFile; productRef = CEC93FCC2B794CB300B97D90 /* IQKeyboardManagerSwift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -43,6 +44,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				CE9562E12B70FE1D00A5FD25 /* SnapKit in Frameworks */,
+				CEC93FCD2B794CB300B97D90 /* IQKeyboardManagerSwift in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -142,6 +144,7 @@
 			name = HW4.7POP;
 			packageProductDependencies = (
 				CE9562E02B70FE1D00A5FD25 /* SnapKit */,
+				CEC93FCC2B794CB300B97D90 /* IQKeyboardManagerSwift */,
 			);
 			productName = HW4.7POP;
 			productReference = CE9562C42B6FDEE500A5FD25 /* HW4.7POP.app */;
@@ -173,6 +176,7 @@
 			mainGroup = CE9562BB2B6FDEE400A5FD25;
 			packageReferences = (
 				CE9562DF2B70FE1D00A5FD25 /* XCRemoteSwiftPackageReference "SnapKit" */,
+				CEC93FCB2B794CB300B97D90 /* XCRemoteSwiftPackageReference "IQKeyboardManager" */,
 			);
 			productRefGroup = CE9562C52B6FDEE500A5FD25 /* Products */;
 			projectDirPath = "";
@@ -425,6 +429,14 @@
 				minimumVersion = 5.0.0;
 			};
 		};
+		CEC93FCB2B794CB300B97D90 /* XCRemoteSwiftPackageReference "IQKeyboardManager" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/hackiftekhar/IQKeyboardManager";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 7.0.0;
+			};
+		};
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
@@ -432,6 +444,11 @@
 			isa = XCSwiftPackageProductDependency;
 			package = CE9562DF2B70FE1D00A5FD25 /* XCRemoteSwiftPackageReference "SnapKit" */;
 			productName = SnapKit;
+		};
+		CEC93FCC2B794CB300B97D90 /* IQKeyboardManagerSwift */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = CEC93FCB2B794CB300B97D90 /* XCRemoteSwiftPackageReference "IQKeyboardManager" */;
+			productName = IQKeyboardManagerSwift;
 		};
 /* End XCSwiftPackageProductDependency section */
 	};

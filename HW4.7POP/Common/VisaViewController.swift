@@ -7,6 +7,7 @@
 
 import UIKit
 import SnapKit
+import IQKeyboardManagerSwift
 
 class VisaViewController: UIViewController, TransferProtocol {
 
